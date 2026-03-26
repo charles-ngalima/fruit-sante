@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FruitSanté | Guide des Bienfaits</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Police élégante -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +14,7 @@
             <div class="logo">Fruit<span>Santé</span></div>
             <ul>
                 <li><a href="#fruits-grid">Découvrir</a></li>
-                <li><a href="#">À propos</a></li>
+                <li><a href="#">Conseils</a></li>
             </ul>
         </nav>
     </header>
@@ -24,8 +23,8 @@
     <section class="hero">
         <div class="hero-content">
             <h1>La Nature vous veut du bien</h1>
-            <p>Explorez les vertus médicinales et nutritionnelles des fruits du monde entier.</p>
-            <a href="#fruits-grid" class="btn-main">Explorer la liste</a>
+            <p>Découvrez les vertus incroyables des fruits pour votre santé.</p>
+            <a href="#fruits-grid" class="btn-main">Explorer les fruits</a>
         </div>
     </section>
 
@@ -34,37 +33,41 @@
 
         <!-- Barre de recherche -->
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Chercher un fruit (ex: Mangue, Kiwi... )">
+            <input type="text" id="searchInput" placeholder="Chercher un fruit (ex: Mangue, Citron...)">
         </div>
 
-        <!-- Filtres par Bienfaits -->
+        <!-- Filtres -->
         <div class="filters">
             <button class="filter-btn active" data-filter="tous">Tous</button>
             <button class="filter-btn" data-filter="immunite">Immunité</button>
             <button class="filter-btn" data-filter="energie">Énergie</button>
             <button class="filter-btn" data-filter="digestion">Digestion</button>
             <button class="filter-btn" data-filter="coeur">Cœur</button>
-            <button class="filter-btn" data-filter="peau">Peau & Éclat</button>
+            <button class="filter-btn" data-filter="peau">Peau</button>
         </div>
 
-        <!-- Grille Dynamique -->
+        <!-- Grille de fruits -->
         <div class="fruits-grid" id="fruitsContainer">
-            <!-- Injecté par JS -->
+            <!-- Injecté par le JavaScript -->
+        </div>
+
+        <!-- Boutons de navigation -->
+        <div class="load-more-container">
+            <button id="showLessBtn" class="btn-secondary btn-less">Voir moins</button>
+            <button id="loadMoreBtn" class="btn-secondary">Voir plus de fruits</button>
         </div>
     </main>
 
-    <!-- Modale de Détails -->
+    <!-- Fenêtre Modale -->
     <div id="fruitModal" class="modal">
         <div class="modal-card">
             <span class="close-modal">&times;</span>
-            <div id="modalBody">
-                <!-- Contenu dynamique -->
-            </div>
+            <div id="modalBody"></div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2023 FruitSanté - Source de bien-être quotidien.</p>
+        <p>&copy; 2026 FruitSanté - Mangez sain, vivez mieux.</p>
     </footer>
 
     <script src="script.js"></script>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitSanté | Guide des Bienfaits</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Police élégante -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Fruit<span>Santé</span></div>
+            <ul>
+                <li><a href="#fruits-grid">Découvrir</a></li>
+                <li><a href="#">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Vitrine -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>La Nature vous veut du bien</h1>
+            <p>Explorez les vertus médicinales et nutritionnelles des fruits du monde entier.</p>
+            <a href="#fruits-grid" class="btn-main">Explorer la liste</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 id="fruits-grid">Répertoire des Fruits</h2>
+
+        <!-- Barre de recherche -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Chercher un fruit (ex: Mangue, Kiwi... )">
+        </div>
+
+        <!-- Filtres par Bienfaits -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="tous">Tous</button>
+            <button class="filter-btn" data-filter="immunite">Immunité</button>
+            <button class="filter-btn" data-filter="energie">Énergie</button>
+            <button class="filter-btn" data-filter="digestion">Digestion</button>
+            <button class="filter-btn" data-filter="coeur">Cœur</button>
+            <button class="filter-btn" data-filter="peau">Peau & Éclat</button>
+        </div>
+
+        <!-- Grille Dynamique -->
+        <div class="fruits-grid" id="fruitsContainer">
+            <!-- Injecté par JS -->
+        </div>
+    </main>
+
+    <!-- Modale de Détails -->
+    <div id="fruitModal" class="modal">
+        <div class="modal-card">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Contenu dynamique -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 FruitSanté - Source de bien-être quotidien.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
